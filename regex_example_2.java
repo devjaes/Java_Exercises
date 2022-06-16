@@ -1,10 +1,11 @@
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
 public class regex_example_2 {
 
     // registro de un vehiculo con regex
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
         String brand;
         String model;
         String year;
@@ -33,19 +34,30 @@ public class regex_example_2 {
 
         // entrada de datos del vehiculo
 
-        brand = JOptionPane.showInputDialog(null, "Ingresa la marca del vehiculo: ");
-        model = JOptionPane.showInputDialog(null, "Ingresa el modelo del vehiculo: ");
-        year = JOptionPane.showInputDialog(null, "Ingresa el año del vehiculo: ");
-        color = JOptionPane.showInputDialog(null, "Ingresa el color del vehiculo: ");
-        plate = JOptionPane.showInputDialog(null, "Ingresa la placa del vehiculo (En mayúsculas): ");
-        type = JOptionPane.showInputDialog(null, "Ingresa el tipo de vehiculo: ");
-        price = JOptionPane.showInputDialog(null, "Ingresa el precio del vehiculo: ");
-        mileage = JOptionPane.showInputDialog(null,
-                "Ingresa el kilometraje del vehiculo (Si no tiene kilometraje ingresa 0): ");
-        cylinder_capacity = JOptionPane.showInputDialog(null, "Ingresa la capacidad del cilindro del vehiculo: ");
-        transmission = JOptionPane.showInputDialog(null,
-                "Ingresa el tipo de transmisión del vehiculo (Automática o Manual): ");
-        doors = JOptionPane.showInputDialog(null, "Ingresa el número de puertas del vehiculo: ");
+        System.out.println("Ingresa la marca del vehiculo: ");
+        brand = scan.nextLine();
+        System.out.println("Ingresa el modelo del vehiculo: ");
+        model = scan.nextLine();
+        System.out.println("Ingresa el año del vehiculo: ");
+        year = scan.nextLine();
+        System.out.println("Ingresa el color del vehiculo: ");
+        color = scan.nextLine();
+        System.out.println("Ingresa la placa del vehiculo (En mayúsculas): ");
+        plate = scan.nextLine();
+        System.out.println("Ingresa el tipo de vehiculo: ");
+        type = scan.nextLine();
+        System.out.println("Ingresa el precio del vehiculo: ");
+        price = scan.nextLine();
+        System.out.println("Ingresa el kilometraje del vehiculo (Si no tiene kilometraje ingresa 0): ");
+        mileage = scan.nextLine();
+        System.out.println("Ingresa la capacidad del cilindro del vehiculo: ");
+        cylinder_capacity = scan.nextLine();
+        System.out.println("Ingresa el tipo de transmisión del vehiculo (Automática o Manual): ");
+        transmission = scan.nextLine();
+        System.out.println("Ingresa el número de puertas del vehiculo: ");
+        doors = scan.nextLine();
+
+        scan.close();
 
         // impresión de datos del vehiculo con regex
 

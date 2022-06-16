@@ -1,10 +1,11 @@
-// impresión de datos personales con regex
 
-import javax.swing.JOptionPane;
+// impresión de datos personales con regex
+import java.util.Scanner;
 
 public class regex_example_1 {
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
         String name;
         String lastname;
         String age;
@@ -23,12 +24,20 @@ public class regex_example_1 {
 
         // entrada de datos personales
 
-        name = JOptionPane.showInputDialog(null, "Ingresa tu nombre: ");
-        lastname = JOptionPane.showInputDialog(null, "Ingresa tu apellido: ");
-        age = JOptionPane.showInputDialog(null, "Ingresa tu edad: ");
-        number = JOptionPane.showInputDialog(null, "Ingresa tu número de teléfono: ");
-        email = JOptionPane.showInputDialog(null, "Ingresa tu email: ");
-        id = JOptionPane.showInputDialog(null, "Ingresa tu ID: ");
+        System.out.println("Ingresa tu nombre: ");
+        name = scan.nextLine();
+        System.out.println("Ingresa tu apellido: ");
+        lastname = scan.nextLine();
+        System.out.println("Ingresa tu edad: ");
+        age = scan.nextLine();
+        System.out.println("Ingresa tu número de teléfono: ");
+        number = scan.nextLine();
+        System.out.println("Ingresa tu email: ");
+        email = scan.nextLine();
+        System.out.println("Ingresa tu ID: ");
+        id = scan.nextLine();
+
+        scan.close();
 
         // impresión de datos personales con regex
 
